@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>التقني إكس | Technix</title>
+<meta name="description" content="التقني إكس (Technix) — منصة المنتجات والمقالات التقنية، تواصل مباشر مع فريق الدعم للشراء والاستفسار، ومجتمع أعضاء لمشاركة المشاكل والاستفسارات.">
+<meta name="keywords" content="التقني إكس, تقني اكس, Technix, Techni X, التقني اكس, تقنية, منتجات تقنية, مقالات تقنية">
+<meta name="author" content="التقني إكس">
+<link rel="canonical" href="https://REPLACE-WITH-YOUR-DOMAIN.com/">
+
+<!-- Open Graph / مشاركة على فيسبوك وواتساب وغيرهم -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="التقني إكس">
+<meta property="og:title" content="التقني إكس | Technix">
+<meta property="og:description" content="منصة المنتجات والمقالات التقنية، تواصل مباشر للشراء والاستفسار، ومجتمع أعضاء تفاعلي.">
+<meta property="og:url" content="https://REPLACE-WITH-YOUR-DOMAIN.com/">
+<meta property="og:locale" content="ar_AR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="التقني إكس | Technix">
+<meta name="twitter:description" content="منصة المنتجات والمقالات التقنية، تواصل مباشر للشراء والاستفسار.">
+
+<!-- بيانات منظّمة (Schema.org) — تساعد جوجل يفهم اسم الموقع وأشكاله المختلفة بالبحث -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "التقني إكس",
+  "alternateName": ["Technix", "Techni X", "التقني اكس", "تقني اكس", "تقني إكس", "التقني X", "التقني x"],
+  "url": "https://REPLACE-WITH-YOUR-DOMAIN.com/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "التقني إكس",
+  "alternateName": ["Technix", "Techni X", "التقني اكس"],
+  "url": "https://REPLACE-WITH-YOUR-DOMAIN.com/"
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>.hidden{display:none !important;}</style>
+<link rel="stylesheet" href="style.css">
+<script>
+  window.onerror = function(msg, url, line, col, err) {
+    var box = document.createElement('div');
+    box.style.cssText = 'position:fixed;inset:0;z-index:99999;background:#0B1220;color:#fff;padding:24px;font-family:monospace;font-size:13px;overflow:auto;direction:ltr;text-align:left;';
+    box.innerHTML = '<h2 style="color:#F2B705;margin-bottom:12px;">⚠️ خطأ برمجي أوقف تحميل الصفحة</h2>' +
+      '<p style="color:#8B98B4;margin-bottom:8px;">انسخ هذا النص وابعته:</p>' +
+      '<pre style="white-space:pre-wrap;background:#1B2740;padding:12px;border-radius:8px;">' +
+      String(msg) + '\nFile: ' + url + '\nLine: ' + line + ':' + col + '</pre>';
+    document.body.appendChild(box);
+  };
+</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body class="min-h-screen">
+
+<!-- ===== الهيدر ===== -->
+<header class="border-b border-[var(--line)] sticky top-0 z-40 bg-[var(--bg)]/90 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <div class="font-display font-extrabold text-xl">التقني <span class="text-[var(--brand)]">إكس</span></div>
+    <nav class="hidden md:flex items-center gap-1 text-sm">
+      <button class="tab-btn px-3 py-2" data-tab="products">المنتجات</button>
+      <button class="tab-btn px-3 py-2" data-tab="articles">المقالات</button>
+      <button class="tab-btn px-3 py-2" data-tab="community">المنشورات</button>
+      <button id="myPostsTabBtn" class="tab-btn px-3 py-2 hidden" data-tab="myposts">منشوراتي</button>
+    </nav>
+    <div id="authArea" class="flex items-center gap-2"></div>
+  </div>
+  <nav class="md:hidden flex items-center gap-1 text-xs px-3 pb-2 overflow-x-auto">
+    <button class="tab-btn px-3 py-1.5 whitespace-nowrap" data-tab="products">المنتجات</button>
+    <button class="tab-btn px-3 py-1.5 whitespace-nowrap" data-tab="articles">المقالات</button>
+    <button class="tab-btn px-3 py-1.5 whitespace-nowrap" data-tab="community">المنشورات</button>
+    <button id="myPostsTabBtnMobile" class="tab-btn px-3 py-1.5 whitespace-nowrap hidden" data-tab="myposts">منشوراتي</button>
+  </nav>
+</header>
+
+<!-- ===== الهيرو ===== -->
+<section class="max-w-6xl mx-auto px-5 pt-6 pb-10">
+  <div class="hero-box">
+    <div id="heroSlides" class="hero-slides"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- أيقونات التواصل الاجتماعي (روابطها تُضبط من لوحة الإدارة) -->
+    <div class="hero-social">
+      <a id="socialInstagram" href="#" target="_blank" rel="noopener" class="social-icon hidden" aria-label="إنستغرام">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+      </a>
+      <a id="socialFacebook" href="#" target="_blank" rel="noopener" class="social-icon hidden" aria-label="فيسبوك">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M14 8.5h2.2V5.6h-2.4c-2.3 0-3.6 1.4-3.6 3.6v1.7H8v2.9h2.2V21h3V13.8h2.3l.4-2.9h-2.7V9.6c0-.7.3-1.1 1.1-1.1z" fill="currentColor"/></svg>
+      </a>
+      <a id="socialWhatsapp" href="#" target="_blank" rel="noopener" class="social-icon hidden" aria-label="واتساب">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.8.1.1.1.3 0 .4-.1.2-.2.3-.3.4l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.5-.1l.6-.7c.2-.3.4-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.4-.1 1.2-.5 1.6-.5.5-1.4.9-2.5.6-1.4-.4-3.4-1.2-4.9-3-1.2-1.4-2-2.9-2.2-3.4-.2-.5-.9-1.9-.4-3z" fill="currentColor"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-content grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="font-display text-4xl md:text-5xl font-extrabold leading-tight">
+          كل شي تقني بمكان وحد،<br><span class="text-[var(--brand)]">وبتواصل مباشر</span>
+        </h1>
+        <p class="text-[var(--muted)] mt-4 leading-7 max-w-md">
+          تصفّح أحدث المنتجات والمقالات التقنية، وتواصل مع فريق التقني إكس مباشرة للشراء أو الاستفسار — وبإمكانك مشاركة مشاكلك مع باقي الأعضاء.
+        </p>
+        <div class="flex gap-3 mt-6">
+          <button onclick="switchTab('products')" class="btn-brand px-6 py-2.5">تصفّح المنتجات</button>
+          <button onclick="switchTab('community')" class="btn-outline px-6 py-2.5">مجتمع الأعضاء</button>
+        </div>
+      </div>
+      <div class="surface rounded-xl p-6 grid grid-cols-2 gap-4 text-center">
+        <div class="p-4"><div class="text-3xl font-display font-extrabold text-[var(--brand)]">24/7</div><div class="text-xs text-[var(--muted)] mt-1">دعم فني</div></div>
+        <div class="p-4"><div class="text-3xl font-display font-extrabold text-[var(--teal)]">مباشر</div><div class="text-xs text-[var(--muted)] mt-1">تواصل للشراء</div></div>
+        <div class="p-4"><div class="text-3xl font-display font-extrabold text-[var(--brand)]">موثوق</div><div class="text-xs text-[var(--muted)] mt-1">محتوى مُراجَع</div></div>
+        <div class="p-4"><div class="text-3xl font-display font-extrabold text-[var(--teal)]">مجتمع</div><div class="text-xs text-[var(--muted)] mt-1">نشر وتفاعل</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="max-w-6xl mx-auto px-5 pb-24">
+
+  <!-- تبويب المنتجات -->
+  <section id="tab-products" class="tab-panel">
+    <h2 class="section-title mb-5">المنتجات</h2>
+    <div id="productsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </section>
+
+  <!-- تبويب المقالات -->
+  <section id="tab-articles" class="tab-panel hidden">
+    <h2 class="section-title mb-5">المقالات</h2>
+    <div id="articlesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </section>
+
+  <!-- تبويب المجتمع -->
+  <section id="tab-community" class="tab-panel hidden">
+    <h2 class="section-title mb-5">منشورات الأعضاء</h2>
+    <div id="postComposerBox" class="mb-5 max-w-lg"></div>
+    <div id="communityFeed" class="grid gap-3 max-w-2xl"></div>
+  </section>
+
+  <!-- تبويب منشوراتي -->
+  <section id="tab-myposts" class="tab-panel hidden">
+    <h2 class="section-title mb-5">منشوراتي</h2>
+    <div id="myPostsFeed" class="grid gap-3 max-w-2xl"></div>
+  </section>
+
+</main>
+
+<footer class="border-t border-[var(--line)] py-8 text-center text-xs text-[var(--muted)]">
+  © <span id="year"></span> التقني إكس. جميع الحقوق محفوظة.
+</footer>
+
+<!-- ===== زر ولوحة الدعم الفني العائم ===== -->
+<button id="supportFab" aria-label="الدعم الفني">
+  <span class="dot dot-offline" id="fabDot"></span>
+  <span id="fabBadge" class="fab-badge hidden">1</span>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="#221A02" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<div id="chatPanel" class="hidden-chat" data-open="0">
+  <div class="flex items-center justify-between p-3 border-b border-[var(--line)] surface-2">
+    <div>
+      <div class="font-semibold text-sm">الدعم الفني</div>
+      <div id="chatHeaderStatus" class="text-xs text-[var(--muted)]">...</div>
+    </div>
+    <button id="closeChatBtn" class="text-[var(--muted)] hover:text-white text-xl leading-none px-2">×</button>
+  </div>
+  <div id="chatBody" class="flex-1 overflow-y-auto p-3 flex flex-col gap-2"></div>
+  <div id="chatInputRow" class="p-2 border-t border-[var(--line)] flex gap-2 hidden">
+    <input id="chatInput" class="input" placeholder="اكتب رسالتك...">
+    <button id="chatSendBtn" class="btn-brand px-4">إرسال</button>
+  </div>
+</div>
+
+<!-- ===== نافذة تسجيل الدخول ===== -->
+<div id="authModal" class="modal-backdrop hidden">
+  <div class="surface rounded-xl p-6 w-full max-w-sm">
+    <div class="flex items-center justify-between mb-4">
+      <h3 id="authModalTitle" class="font-display font-bold text-lg">تسجيل الدخول</h3>
+      <button id="closeAuthModal" class="text-[var(--muted)] hover:text-white text-2xl leading-none">×</button>
+    </div>
+    <form id="authForm" class="flex flex-col gap-3" data-mode="login">
+      <div id="displayNameField" class="hidden">
+        <label class="text-xs text-[var(--muted)] block mb-1">الاسم</label>
+        <input id="authName" class="input" placeholder="اسمك">
+      </div>
+      <div>
+        <label class="text-xs text-[var(--muted)] block mb-1">البريد الإلكتروني</label>
+        <input id="authEmail" type="email" required class="input" placeholder="you@example.com">
+      </div>
+      <div>
+        <label class="text-xs text-[var(--muted)] block mb-1">كلمة السر</label>
+        <input id="authPassword" type="password" required minlength="6" class="input" placeholder="••••••">
+      </div>
+      <div id="authError" class="hidden text-xs text-[var(--danger)]"></div>
+      <button id="authSubmitBtn" type="submit" class="btn-brand py-2.5 mt-1">دخول</button>
+      <button type="button" id="authSwitchLink" class="text-xs text-[var(--teal)] text-center">ليس لديك حساب؟ أنشئ واحد</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== نافذة نشر مشكلة/استفسار ===== -->
+<div id="postModal" class="modal-backdrop hidden">
+  <div class="surface rounded-xl p-6 w-full max-w-md max-h-[90vh] overflow-y-auto">
+    <div class="flex items-center justify-between mb-4">
+      <h3 class="font-display font-bold text-lg">✍️ انشر مشكلتك أو استفسارك</h3>
+      <button id="closePostModal" class="text-[var(--muted)] hover:text-white text-2xl leading-none">×</button>
+    </div>
+    <form id="postForm" class="flex flex-col gap-4">
+
+      <!-- 1) رفع صورة (اختياري) مع تحقق ومعاينة -->
+      <div id="postImageSection">
+        <label class="text-xs text-[var(--muted)] block mb-2">صورة توضيحية (اختياري)</label>
+        <label id="postImageDropzone" class="flex flex-col items-center justify-center gap-1 border border-dashed border-[var(--line)] rounded-lg py-5 cursor-pointer hover:border-[var(--teal)] transition-colors">
+          <span class="text-2xl">📷</span>
+          <span class="text-xs text-[var(--muted)]">اضغط لاختيار صورة</span>
+          <input id="postImageFile" type="file" accept="image/*" class="hidden">
+        </label>
+        <div id="postImageStatus" class="text-xs text-[var(--muted)] mt-2 hidden"></div>
+        <div id="postImagePreviewWrap" class="hidden mt-2 relative">
+          <img id="postImagePreview" class="w-full h-36 object-cover rounded-lg">
+          <span id="postImageVerified" class="chip chip-approved absolute top-2 right-2">✓ تم التحقق من الصورة</span>
+          <button type="button" id="removePostImage" class="tag-remove absolute top-2 left-2 bg-[var(--surface)] rounded-full w-6 h-6 flex items-center justify-center border border-[var(--line)]">×</button>
+        </div>
+      </div>
+      <div id="postImageUnavailableNote" class="hidden text-xs text-[var(--muted)] text-center border border-dashed border-[var(--line)] rounded-lg py-3">
+        📷 رفع الصور غير متاح حاليًا
+      </div>
+
+      <!-- 2) العنوان (أكبر خطًا) -->
+      <div>
+        <label class="text-xs text-[var(--muted)] block mb-1">عنوان المقال أو المشكلة</label>
+        <input id="postTitle" required class="input text-lg font-bold" placeholder="اكتب عنوانًا مختصرًا وواضحًا">
+      </div>
+
+      <!-- 3) الشرح -->
+      <div>
+        <label class="text-xs text-[var(--muted)] block mb-1">الشرح</label>
+        <textarea id="postContent" required rows="5" class="input" placeholder="اشرح تفاصيل مشكلتك أو استفسارك هون..."></textarea>
+      </div>
+
+      <p class="text-xs text-[var(--muted)]">سيتم مراجعة المنشور من قبل الإدارة قبل ظهوره للجميع.</p>
+      <button id="postSubmitBtn" type="submit" class="btn-brand py-2.5">إرسال للمراجعة</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="app.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  switchTab("products");
+</script>
+</body>
+</html>
